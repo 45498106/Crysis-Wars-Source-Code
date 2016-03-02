@@ -13,16 +13,16 @@ Feel free to fork and create your own game mod :-).
 
 From the [CryEngine Forums](http://www.cryengine.com/community/viewtopic.php?t=66401):
 
-  static void SvMaxPlayers(ICVar* cvar)
-  {
-     int value = cvar->GetIVal();
-     if (value < 2) 
-     {
-        value=2;
-        cvar->Set(value);
-        return;
-        }
-  }
+    static void SvMaxPlayers(ICVar* cvar)
+    {
+       int value = cvar->GetIVal();
+       if (value < 2) 
+       {
+          value=2;
+          cvar->Set(value);
+          return;
+          }
+      }
   
   pConsole->GetCVar("sv_maxplayers")->SetOnChangeCallback(SvMaxPlayers);
   
