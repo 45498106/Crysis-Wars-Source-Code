@@ -28,9 +28,9 @@ From the [CryEngine Forums](http://www.cryengine.com/community/viewtopic.php?t=6
   
 Goes in GameCVars.cpp.
 
-##Common Issues:
+# Common Issues:
 
-# <hash_map> is deprecated and will be REMOVED. Please use <unordered_map>.
+#<hash_map> is deprecated and will be REMOVED. Please use <unordered_map>.
 
 Open `StlUtls.h` (Code\CryEngine\CryCommon\), and add another at line 21 with `#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS`.
 
